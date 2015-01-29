@@ -15,12 +15,14 @@ gem 'devise'
 gem 'pundit'
 group :development do
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_21]
+ #gem 'binding_of_caller', :platforms=>[:mri_21]
+  gem 'binding_of_caller'
   gem 'quiet_assets'
   gem 'rails_layout'
 end
 group :development, :test do
   gem 'factory_girl_rails'
+  gem 'pry'
   gem 'rspec-rails'
 end
 group :test do
@@ -29,4 +31,5 @@ group :test do
   gem 'faker'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'simplecov', require: false
 end
